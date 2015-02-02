@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+<div align = "center">
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag(@user.picture, :size => "90x90")%>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>Sex:</b>
+  <%= @user.sex %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @user.dob %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @user.address %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @user.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @user.longitude %>
+</p>
+
+<p>
+  <b>Expertise:</b>
+  <%= @user.expertise %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

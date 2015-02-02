@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  preview: MyString
+  name: MyString
+  price: 1.5
+  benefit_id: 1
+  size: 1
+  energy: 1.5
+  protein: 1.5
+  carbonhydrate: 1.5
+  fat: 1.5
+  fiber: 1.5
+  sodium: 1.5
+  allegyInformation: MyString
+
+two:
+  preview: MyString
+  name: MyString
+  price: 1.5
+  benefit_id: 1
+  size: 1
+  energy: 1.5
+  protein: 1.5
+  carbonhydrate: 1.5
+  fat: 1.5
+  fiber: 1.5
+  sodium: 1.5
+  allegyInformation: MyString

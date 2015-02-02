@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+		
+  <title>Fitnessapp</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+
+
+<div id="banner">
+	<%= image_tag("crew.jpg", :size => "160x80") %>
+	<%= @page_title || "The Juice We Love" %>
+</div>
+
+<div id="nav">
+    <ul>
+      <li><%= link_to "Questions", 'http://www.nationaldairycouncil.org/'%></li>
+      <li><%= link_to "WorkOut News", 'http://npng-nutrition.ie/' %></li>
+      <li><%= mail_to "c11560127@mydit.ie", "Contact us" %></li>	
+      <li><%= link_to "Supplement", supplements_path%></li>
+    </ul>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<h1>Listing supplements</h1>
+
+<table>
+  <tr>
+    <th>Preview</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Benefit</th>
+    <th>Size</th>
+    <th>Energy</th>
+    <th>Protein</th>
+    <th>Carbonhydrate</th>
+    <th>Fat</th>
+    <th>Fiber</th>
+    <th>Sodium</th>
+    <th>Allegyinformation</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @supplements.each do |supplement| %>
+  <tr>
+    <td><%= supplement.preview %></td>
+    <td><%= supplement.name %></td>
+    <td><%= supplement.price %></td>
+    <td><%= supplement.benefit.name %></td>
+    <td><%= supplement.size %></td>
+    <td><%= supplement.energy %></td>
+    <td><%= supplement.protein %></td>
+    <td><%= supplement.carbonhydrate %></td>
+    <td><%= supplement.fat %></td>
+    <td><%= supplement.fiber %></td>
+    <td><%= supplement.sodium %></td>
+    <td><%= supplement.allegyInformation %></td>
+    <td><%= link_to 'Show', supplement %></td>
+    <td><%= link_to 'Edit', edit_supplement_path(supplement) %></td>
+    <td><%= link_to 'Destroy', supplement, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Supplement', new_supplement_path %>

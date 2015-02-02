@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+<div align = "center">
+
+<p>
+  <b>Preview:</b>
+  <%= image_tag(@supplement.preview, :size => "90x90")%>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @supplement.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @supplement.price %>
+</p>
+
+<p>
+  <b>Benefit:</b>
+  <%= @supplement.benefit.name %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @supplement.size %>
+</p>
+
+<p>
+  <b>Energy:</b>
+  <%= @supplement.energy %>
+</p>
+
+<p>
+  <b>Protein:</b>
+  <%= @supplement.protein %>
+</p>
+
+<p>
+  <b>Carbonhydrate:</b>
+  <%= @supplement.carbonhydrate %>
+</p>
+
+<p>
+  <b>Fat:</b>
+  <%= @supplement.fat %>
+</p>
+
+<p>
+  <b>Fiber:</b>
+  <%= @supplement.fiber %>
+</p>
+
+<p>
+  <b>Sodium:</b>
+  <%= @supplement.sodium %>
+</p>
+
+<p>
+  <b>Allegyinformation:</b>
+  <%= @supplement.allegyInformation %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_supplement_path(@supplement) %> |
+<%= link_to 'Back', supplements_path %>
+</div>
